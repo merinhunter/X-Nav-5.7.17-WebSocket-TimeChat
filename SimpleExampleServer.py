@@ -21,6 +21,7 @@ class SimpleEcho(WebSocket):
 
         try:
             self.sendMessage(str(self.data))
+            print self.address, str(self.data);
         except Exception as n:
             print n
 
