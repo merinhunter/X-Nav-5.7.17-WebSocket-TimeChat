@@ -57,10 +57,10 @@
 
 		form.addEventListener("submit", function (e) {
 			e.preventDefault();
+			s.send(inputBox.value);
 			var p = document.createElement("p");
 			p.innerHTML = "ENVIADO " + inputBox.value;
 			output.appendChild(p);
-			s.send(inputBox.value);
 			inputBox.value = "";
 		}, false)
 
